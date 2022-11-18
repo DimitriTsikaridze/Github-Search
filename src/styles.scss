@@ -1,0 +1,12 @@
+@use "./styles/reset.scss";
+@use "./styles/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Space Mono", monospace;
+  max-width: 1440px;
+  display: grid;
+  margin-inline: auto;
+  place-items: center;
+  background-color: var(--gray-0);
+}
