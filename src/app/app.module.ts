@@ -8,7 +8,8 @@ import { SearchBarComponent } from "./search-bar/search-bar.component"
 import { UserDetailsComponent } from "./user-details/user-details.component"
 import { CreatedAtPipe } from "./user-details/created-at.pipe"
 import { UserStatsComponent } from "./user-details/user-stats/user-stats.component"
-import { UserLinksComponent } from "./user-details/user-links/user-links.component"
+import { UserLinksComponent } from "./user-details/user-links/user-links.component";
+import { SubmitOnEnterDirective } from './search-bar/submit-on-enter.directive'
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { UserLinksComponent } from "./user-details/user-links/user-links.compone
     CreatedAtPipe,
     UserStatsComponent,
     UserLinksComponent,
+    SubmitOnEnterDirective,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],

@@ -10,7 +10,7 @@ import { UsersService } from "../user-details/users.service"
 export class SearchBarComponent {
   constructor(private usersService: UsersService) {}
 
-  handleSearch(value: string) {
-    this.usersService.searchTerm.next(value)
+  handleSearch(searchTerm: string) {
+    this.usersService.searchTerm.next(searchTerm)
   }
 }

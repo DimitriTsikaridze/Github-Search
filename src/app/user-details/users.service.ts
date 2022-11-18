@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core"
 import { HttpClient } from "@angular/common/http"
-import { BehaviorSubject, Observable, switchMap } from "rxjs"
+import { BehaviorSubject, Observable, switchMap, tap } from "rxjs"
 import { GithubUser } from "./user.model"
 
 @Injectable({
@@ -9,11 +9,14 @@ import { GithubUser } from "./user.model"
 export class UsersService {
   constructor(private http: HttpClient) {}
 
-  searchTerm = new BehaviorSubject<string>("octocat")
+  searchTerm = new BehaviorSubject<string>("mgechev")
 
   getUser(): Observable<GithubUser> {
+    console.log("fs")
     return this.searchTerm.pipe(
-      switchMap((searchTerm) => this.readUser(searchTerm))
+      switchMap((searchTerm) => {
+        return this.readUser(searchTerm)
+      })
     )
   }
 

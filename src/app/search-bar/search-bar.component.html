@@ -1,6 +1,8 @@
 <img class="search-icon" src="../../assets/icon-search.svg" alt="Search Icon" />
 
 <input
+  appSubmitOnEnter
+  (submitEvent)="handleSearch(inputRef.value)"
   class="search-input"
   type="text"
   #inputRef
