@@ -1,0 +1,22 @@
+<div class="location">
+  <img src="../../../assets/icon-location.svg" alt="Location Icon" />
+  <h3 *ngIf="links.location; else notAvailable">{{ links.location }}</h3>
+</div>
+<div class="twitter">
+  <img src="../../../assets/icon-twitter.svg" alt="Twitter Icon" />
+  <h3 *ngIf="links.twitter_username; else notAvailable">
+    {{ links.twitter_username }}
+  </h3>
+</div>
+<div class="blog">
+  <img src="../../../assets/icon-website.svg" alt="Website Icon" />
+  <h3 *ngIf="links.blog; else notAvailable">{{ links.blog }}</h3>
+</div>
+<div class="company">
+  <img src="../../../assets/icon-company.svg" alt="Company Icon" />
+  <h3 *ngIf="links.company; else notAvailable">{{ links.company }}</h3>
+</div>
+
+<ng-template #notAvailable>
+  <h3 class="not-available">Not Available</h3>
+</ng-template>

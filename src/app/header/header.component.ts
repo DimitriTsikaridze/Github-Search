@@ -15,6 +15,5 @@ export class HeaderComponent implements OnInit {
 
   toggleTheme() {
     this.nextTheme = this.nextTheme === "dark" ? "light" : "dark"
-    console.log(this.nextTheme)
   }
 }

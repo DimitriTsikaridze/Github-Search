@@ -1,0 +1,56 @@
+:host {
+  display: block;
+  display: grid;
+  padding: 4.8rem;
+  background-color: var(--white);
+  border-radius: 15px;
+  grid-template-columns: 11.7rem 1fr;
+  gap: 3.7rem;
+  box-shadow: 0px 16px 30px -10px #4660bb33;
+}
+
+
+
+article {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.user-login {
+  font-size: 1.6rem;
+  color: var(--blue);
+  font-weight: 400;
+}
+
+.user-bio {
+  color: var(--gray-3);
+  font-size: 1.5rem;
+  margin-block: 2rem 3.2rem;
+  font-weight: 400;
+}
+
+.created-at {
+  margin-left: auto;
+  color: var(--gray-2);
+  font-size: 1.5rem;
+  font-weight: 400;
+  align-self: flex-start;
+}

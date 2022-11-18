@@ -1,0 +1,23 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.9rem 6.2rem;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gray-3);
+
+}
+
+
+h3.not-available {
+  opacity: 50%;
+}
