@@ -1,6 +1,5 @@
 :host {
   display: block;
-  user-select: none;
   justify-content: space-between;
 }
 
@@ -17,6 +16,7 @@ h1 {
 }
 
 .theme-switcher {
+  user-select: none;
   cursor: pointer;
 
   span {

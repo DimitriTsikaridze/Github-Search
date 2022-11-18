@@ -17,6 +17,11 @@ svg {
 
 button {
   cursor: pointer;
+}
+
+button,
+input {
+  font-family: inherit;
   border: none;
   outline: none;
 }
