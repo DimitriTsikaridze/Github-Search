@@ -6,6 +6,8 @@
 
 div {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
   gap: 1.9rem;
 }
@@ -18,6 +20,11 @@ h3 {
 }
 
 
-h3.not-available {
+h3.not-available,
+h3.not-available+img {
   opacity: 50%;
+}
+
+a:hover {
+  text-decoration: underline;
 }

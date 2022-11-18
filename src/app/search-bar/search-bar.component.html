@@ -3,7 +3,10 @@
 <input
   class="search-input"
   type="text"
+  #inputRef
   placeholder="Search GitHub username..."
 />
 <p *ngIf="false" class="error-text">No Results</p>
-<button class="search-button">Search</button>
+<button class="search-button" (click)="handleSearch(inputRef.value)">
+  Search
+</button>

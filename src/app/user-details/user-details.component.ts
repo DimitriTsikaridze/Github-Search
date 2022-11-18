@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core"
-import { Observable } from "rxjs"
+import { Observable, switchMap } from "rxjs"
 import { GithubUser } from "./user.model"
 import { UsersService } from "./users.service"
 
@@ -15,6 +15,6 @@ export class UserDetailsComponent implements OnInit {
   user$: Observable<GithubUser>
 
   ngOnInit(): void {
-    this.user$ = this.usersService.getUser("octocat")
+    this.user$ = this.usersService.getUser()
   }
 }
