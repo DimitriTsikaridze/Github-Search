@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core"
-import { Observable, switchMap } from "rxjs"
+import { Observable } from "rxjs"
 import { GithubUser } from "./user.model"
 import { UsersService } from "./users.service"
 

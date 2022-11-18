@@ -12,7 +12,6 @@ export class UsersService {
   searchTerm = new BehaviorSubject<string>("mgechev")
 
   getUser(): Observable<GithubUser> {
-    console.log("fs")
     return this.searchTerm.pipe(
       switchMap((searchTerm) => {
         return this.readUser(searchTerm)
