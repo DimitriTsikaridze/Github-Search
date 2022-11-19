@@ -9,7 +9,8 @@ import { UserDetailsComponent } from "./user-details/user-details.component"
 import { CreatedAtPipe } from "./user-details/created-at.pipe"
 import { UserStatsComponent } from "./user-details/user-stats/user-stats.component"
 import { UserLinksComponent } from "./user-details/user-links/user-links.component";
-import { SubmitOnEnterDirective } from './search-bar/submit-on-enter.directive'
+import { SubmitOnEnterDirective } from './search-bar/submit-on-enter.directive';
+import { LoadingComponent } from './loading/loading.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SubmitOnEnterDirective } from './search-bar/submit-on-enter.directive'
     UserStatsComponent,
     UserLinksComponent,
     SubmitOnEnterDirective,
+    LoadingComponent,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],

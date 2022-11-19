@@ -1,7 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core"
-import { Observable } from "rxjs"
+import { ChangeDetectionStrategy, Component, Input } from "@angular/core"
 import { GithubUser } from "./user.model"
-import { UsersService } from "./users.service"
 
 @Component({
   selector: "app-user-details",
@@ -9,12 +7,6 @@ import { UsersService } from "./users.service"
   styleUrls: ["./user-details.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UserDetailsComponent implements OnInit {
-  constructor(private usersService: UsersService) {}
-
-  user$: Observable<GithubUser>
-
-  ngOnInit(): void {
-    this.user$ = this.usersService.getUser()
-  }
+export class UserDetailsComponent {
+  @Input() user: GithubUser
 }
