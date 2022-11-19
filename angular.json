@@ -101,12 +101,6 @@
           "options": {
             "browserTarget": "github-users-search-app:build"
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "https://github.com/DimitriTsikaridze/Github-Users-Search"
-          }
         }
       }
     }

@@ -9,7 +9,7 @@ import { GithubUser } from "./user.model"
 export class UsersService {
   constructor(private http: HttpClient) {}
 
-  searchTerm = new BehaviorSubject<string>("mgechev")
+  searchTerm = new BehaviorSubject<string>("octocat")
 
   getUser(): Observable<GithubUser> {
     return this.searchTerm.pipe(
