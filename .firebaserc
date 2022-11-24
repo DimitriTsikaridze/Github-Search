@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "githubsearch-fead5": {
+      "hosting": {
+        "github-users-search-app": [
+          "githubsearch-fead5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "githubsearch-fead5"
+  }
+}

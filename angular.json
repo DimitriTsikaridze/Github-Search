@@ -47,8 +47,12 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -161,6 +165,18 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": true,
+            "ssr": false,
+            "browserTarget": "github-users-search-app:build:production",
+            "firebaseProject": "githubsearch-fead5",
+            "firebaseHostingSite": "githubsearch-fead5",
+            "serverTarget": "github-users-search-app:server:production",
+            "prerenderTarget": "github-users-search-app:prerender:production"
+          }
         }
       }
     }
