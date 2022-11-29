@@ -28,3 +28,11 @@ h3.not-available+img {
 a:hover {
   text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 600px) {
+  :host {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}

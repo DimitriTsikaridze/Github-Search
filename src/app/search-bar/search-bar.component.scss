@@ -51,3 +51,16 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+@media only screen and (max-width: 600px) {
+  :host {
+    position: relative;
+    margin-bottom: 3.4rem;
+  }
+
+  .error-text {
+    position: absolute;
+    bottom: -27px;
+    right: 10px;
+  }
+}
